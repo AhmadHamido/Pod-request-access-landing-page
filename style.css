@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+}
+
+/* ============
+Typography 
+============*/
+
+/* ============
+Layout
+============*/
+
+.container {
+  background: url(images/mobile/image-host.jpg) no-repeat center center;
+}
+
+/* ============
+Media Query 
+============*/

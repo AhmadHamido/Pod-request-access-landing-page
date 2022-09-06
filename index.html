@@ -5,9 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
 
     <title>POD Request Access</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/desktop/logo.svg" alt="POD logo" />
+      </header>
+      <main>
+        <h1>
+          <span class="title-span">PUBLISH YOUR PODCASTS</span> EVERYWHERE.
+        </h1>
+        <p>
+          Upload your audio to Pod with a single click. We'll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="podcast-holder">
+          <img src="images/desktop/spotify.svg" alt="spotify logo" />
+          <img
+            src="images/desktop/apple-podcast.svg"
+            alt="apple podcast logo"
+          />
+          <img
+            src="images/desktop/google-podcasts.svg"
+            alt="google podcast logo"
+          />
+          <img src="images/desktop/pocket-casts.svg" alt="pocket casts logo" />
+        </div>
+        <form action="#">
+          <input
+            type="email"
+            class="email-input"
+            id="email-input"
+            placeholder="Email Address"
+          />
+          <button
+            class="request-access-btn"
+            id="request-access-btn"
+            type="submit"
+          >
+            Request Access
+          </button>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
