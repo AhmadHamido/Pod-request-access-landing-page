@@ -12,12 +12,62 @@ body {
 Typography 
 ============*/
 
+h1 {
+  font-size: 1.625rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.title-span {
+  color: #54e6af;
+}
+
+.intro {
+  font-size: 0.9375rem;
+  color: #c2cbe5;
+}
+
+/* input and button */
+
+.email-input,
+.request-access-btn {
+  border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.email-input {
+  background: #2c344b;
+  border: 1px solid #2c344b;
+  padding: 0.75em 1.2em;
+}
+
+.email-input::placeholder {
+  color: #fff;
+}
+
+.request-access-btn {
+  padding: 0.6em 1em;
+  border: none;
+  color: #121725;
+  background: #54e6af;
+}
+
+.request-access-btn:hover,
+.request-access-btn:active {
+  cursor: pointer;
+  background: #b3ffe2;
+}
+
 /* ============
 Layout
 ============*/
 
 .container {
   background: url(images/mobile/image-host.jpg) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100vh;
 }
 
 /* ============
