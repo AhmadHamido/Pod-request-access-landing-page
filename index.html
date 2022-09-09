@@ -20,28 +20,41 @@
       </header>
 
       <main>
-        <h1>
-          <span class="title-span">PUBLISH YOUR PODCASTS</span> EVERYWHERE.
-        </h1>
-        <p class="intro">
-          Upload your audio to Pod with a single click. We'll then distribute
-          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
-          and more!
-        </p>
+        <section class="text-holder">
+          <h1>
+            <span class="title-span">PUBLISH YOUR PODCASTS</span> EVERYWHERE.
+          </h1>
+          <p class="intro">
+            Upload your audio to Pod with a single click. We'll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </section>
         <div class="podcast-holder">
-          <img src="images/desktop/spotify.svg" alt="spotify logo" />
           <img
+            class="podcast-image"
+            src="images/desktop/spotify.svg"
+            alt="spotify logo"
+          />
+          <img
+            class="podcast-image"
             src="images/desktop/apple-podcast.svg"
             alt="apple podcast logo"
           />
           <img
+            class="podcast-image"
             src="images/desktop/google-podcasts.svg"
             alt="google podcast logo"
           />
-          <img src="images/desktop/pocket-casts.svg" alt="pocket casts logo" />
+          <img
+            class="podcast-image"
+            src="images/desktop/pocket-casts.svg"
+            alt="pocket casts logo"
+          />
         </div>
-        <form class="form-request-access" action="#">
+        <div class="form-request-access" id="form-request-access" action="#">
           <input
+            autocomplete="off"
             type="email"
             class="email-input"
             id="email-input"
@@ -54,7 +67,7 @@
           >
             Request Access
           </button>
-        </form>
+        </div>
       </main>
     </div>
   </body>

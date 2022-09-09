@@ -12,10 +12,17 @@ body {
 Typography 
 ============*/
 
+h1,
+.intro {
+  text-align: center;
+  line-height: 1.5;
+}
+
 h1 {
   font-size: 1.625rem;
   color: #fff;
   font-weight: 300;
+  margin-bottom: 0.5em;
 }
 
 .title-span {
@@ -23,8 +30,13 @@ h1 {
 }
 
 .intro {
-  font-size: 0.9375rem;
   color: #c2cbe5;
+}
+
+.podcast-image {
+  max-width: 70px;
+  justify-self: center;
+  align-self: center;
 }
 
 /* input and button */
@@ -38,8 +50,10 @@ h1 {
 
 .email-input {
   background: #2c344b;
+  color: #fff;
   border: 1px solid #2c344b;
-  padding: 0.75em 1.2em;
+  padding: 0.75em 2em;
+  margin-bottom: 1em;
 }
 
 .email-input::placeholder {
@@ -59,15 +73,65 @@ h1 {
   background: #b3ffe2;
 }
 
+.thank-you-message,
+.error-add,
+.error-check {
+  grid-row: 2;
+  margin-bottom: 1em;
+  padding-left: 2em;
+  font-weight: 700;
+}
+
+.error-add,
+.error-check {
+  color: red;
+}
+
+.thank-you-message {
+  color: #fff;
+}
+
 /* ============
 Layout
 ============*/
 
+.container,
+main,
+.podcast-holder,
+.form-request-access {
+  display: grid;
+}
+
+header,
+main {
+  grid-column: 2 / -2;
+}
+
 .container {
-  background: url(images/mobile/image-host.jpg) no-repeat center center;
+  --background-overlay: rgb(18 23 38 /0.9);
+  background: linear-gradient(
+      var(--background-overlay),
+      var(--background-overlay)
+    ),
+    url(images/mobile/image-host.jpg) no-repeat center center;
   background-size: cover;
-  background-blend-mode: darken;
+  mix-blend-mode: darken;
   height: 100vh;
+  grid-template: 175px 1fr / 1.2em 1fr 1.2em;
+}
+
+header {
+  justify-self: center;
+  align-self: center;
+}
+
+main {
+  grid-template-rows: 192px 50px 108px;
+  grid-gap: 30px;
+}
+
+.podcast-holder {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* ============
